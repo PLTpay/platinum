@@ -156,13 +156,13 @@ static const int64_t nReservePhaseStart = 1;
 /** Reserve Phase end block */ 
 static const int64_t nReservePhaseEnd = 12; // 
 /** Main Net Genesis Block */
-static const uint256 nGenesisBlock("0x000008da322cd9a2d0ba1a3a5ca8748e12f2a66cb92fdf82a35ca05e667401b5");
+static const uint256 nGenesisBlock("0x0000017acc6e5f2f560dfd05bf1e4d48eadc22d4b7c69f4e93403e91bfebfc8c");
 /** Test Net Genesis Block */
-static const uint256 hashTestNetGenesisBlock("0x000008da322cd9a2d0ba1a3a5ca8748e12f2a66cb92fdf82a35ca05e667401b5");
+static const uint256 hashTestNetGenesisBlock("0x0000017acc6e5f2f560dfd05bf1e4d48eadc22d4b7c69f4e93403e91bfebfc8c");
 /** Reg Net Genesis Block */
-static const uint256 hashRegNetGenesisBlock("0x000008da322cd9a2d0ba1a3a5ca8748e12f2a66cb92fdf82a35ca05e667401b5");
+static const uint256 hashRegNetGenesisBlock("0x0000017acc6e5f2f560dfd05bf1e4d48eadc22d4b7c69f4e93403e91bfebfc8c");
 /** Genesis Merkleroot */
-static const uint256 nGenesisMerkle("0x0ac5f5c92e5d1dd6170ce313c848ae8ae5f1f4d14f576944192e72720280ff4d");
+static const uint256 nGenesisMerkle("0xadae7e39fb043653495b64330aa5d465514dd99096606fbb99d862771690bd54");
 
 extern CScript COINBASE_FLAGS;
 extern CCriticalSection cs_main;
