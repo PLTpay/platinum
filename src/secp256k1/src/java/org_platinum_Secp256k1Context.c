@@ -1,6 +1,6 @@
 #include <stdlib.h>
 #include <stdint.h>
-#include "org_bitcoin_Secp256k1Context.h"
+#include "org_platinum_Secp256k1Context.h"
 #include "include/secp256k1.h"
 
 SECP256K1_API jlong JNICALL Java_org_bitcoin_Secp256k1Context_secp256k1_1init_1context

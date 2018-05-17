@@ -247,7 +247,7 @@ Update vAletrt pub/privkeys
 
 Add cryptostream for api key encryption
 
-Add removeSpaces in bitcoinunits.cpp
+Add removeSpaces in platinumunits.cpp
 
 Coin control fixes for Qt5
 

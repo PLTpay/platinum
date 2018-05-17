@@ -1,5 +1,5 @@
-// Copyright (c) 2010 Satoshi Nakamoto
-// Copyright (c) 2009-2012 The Bitcoin developers
+// Copyright (c) 2017 Eugene Fillippovsky
+// Copyright (c) 2017 The Platinum developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -64,12 +64,12 @@ public:
         vout.resize(1);
         vout[0].nValue = nGenesisBlockReward;
         vout[0].SetEmpty();
-        CTransaction txNew(1, 1526370300, vin, vout, 0, "");
+        CTransaction txNew(1, 1526540400, vin, vout, 0, "");
         genesis.vtx.push_back(txNew);
         genesis.hashPrevBlock = 0;
         genesis.hashMerkleRoot = genesis.BuildMerkleTree();
         genesis.nVersion = 1;
-        genesis.nTime    = 1526370300; // Mon, 01 May 2017 00:00:00 GMT
+        genesis.nTime    = 1526540400; // Mon, 01 May 2017 00:00:00 GMT
         genesis.nBits    = bnProofOfWorkLimit.GetCompact();
         genesis.nNonce   = 1897654;
 
@@ -112,9 +112,7 @@ public:
         base58Prefixes[EXT_PUBLIC_KEY] = list_of(0x04)(0x88)(0xB2)(0x1E).convert_to_container<std::vector<unsigned char> >();
         base58Prefixes[EXT_SECRET_KEY] = list_of(0x04)(0x88)(0xAD)(0xE4).convert_to_container<std::vector<unsigned char> >();
 
-        vSeeds.push_back(CDNSSeedData("cryptocoderz.com.1",  "insn.cryptocoderz.com"));
-        vSeeds.push_back(CDNSSeedData("cryptocoderz.com.2",  "insane.cryptocoderz.com"));
-        vSeeds.push_back(CDNSSeedData("thecryptochat.net",  "195.74.52.227"));
+        
         convertSeed6(vFixedSeeds, pnSeed6_main, ARRAYLEN(pnSeed6_main));
 
         nPoolMaxTransactions = 3;
@@ -157,7 +155,7 @@ public:
         strDataDir = "testnet";
 
         // Modify the testnet genesis block so the timestamp is valid for a later start.
-        genesis.nTime  = 1526370300;
+        genesis.nTime  = 1526540400;
         genesis.nBits  = bnProofOfWorkLimit.GetCompact();
         genesis.nNonce = 1989449;
 
@@ -199,7 +197,7 @@ public:
         pchMessageStart[2] = 0x4f;
         pchMessageStart[3] = 0x3e;
         bnProofOfWorkLimit = CBigNum(~uint256(0) >> 1);
-        genesis.nTime = 1526370300;
+        genesis.nTime = 1526540400;
         genesis.nBits  = bnProofOfWorkLimit.GetCompact();
         genesis.nNonce = 1897655;
         hashGenesisBlock = genesis.GetHash();

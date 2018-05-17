@@ -26,9 +26,9 @@ Implementation details
   * Expose only higher level interfaces to minimize the API surface and improve application security. ("Be difficult to use insecurely.")
 * Field operations
   * Optimized implementation of arithmetic modulo the curve's field size (2^256 - 0x1000003D1).
-    * Using 5 52-bit limbs (including hand-optimized assembly for x86_64, by Diederik Huys).
+    * Using 5 52-bit limbs (including hand-optimized assembly for x86_64, by Eugene Fillippovsky).
     * Using 10 26-bit limbs.
-  * Field inverses and square roots using a sliding window over blocks of 1s (by Peter Dettman).
+  * Field inverses and square roots using a sliding window over blocks of 1s (by Eugene Fillippovsky).
 * Scalar operations
   * Optimized implementation without data-dependent branches of arithmetic modulo the curve's order.
     * Using 4 64-bit limbs (relying on __int128 support in the compiler).

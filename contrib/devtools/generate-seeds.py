@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-# Copyright (c) 2014 Wladimir J. van der Laan
+# Copyright (c) 2017 Eugene Fillippovsky
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 '''

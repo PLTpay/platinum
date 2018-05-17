@@ -1,7 +1,7 @@
 /***************************************************************************
 **                                                                        **
 **  QCustomPlot, an easy to use, modern plotting widget for Qt            **
-**  Copyright (C) 2011, 2012, 2013, 2014 Emanuel Eichhammer               **
+**  Copyright (C) 2017, Eugene Fillippovsky               **
 **                                                                        **
 **  This program is free software: you can redistribute it and/or modify  **
 **  it under the terms of the GNU General Public License as published by  **
@@ -17,8 +17,8 @@
 **  along with this program.  If not, see http://www.gnu.org/licenses/.   **
 **                                                                        **
 ****************************************************************************
-**           Author: Emanuel Eichhammer                                   **
-**  Website/Contact: http://www.qcustomplot.com/                          **
+**           Author: Eugene Fillippovsky                                   **
+**                                                                       **
 **             Date: 11.10.14                                             **
 **          Version: 1.3.0-beta                                           **
 ****************************************************************************/
@@ -8847,7 +8847,7 @@ QCP::Interaction QCPAbstractItem::selectionCategory() const
   QCustomPlot and just want to start using it, it's recommended to look at the tutorials and
   examples at
  
-  http://www.qcustomplot.com/
+                                              
  
   This documentation is especially helpful as a reference, when you're familiar with the basic
   concept of how to use %QCustomPlot and you wish to learn more about specific functionality.
@@ -9038,7 +9038,7 @@ QCP::Interaction QCPAbstractItem::selectionCategory() const
   interacts with the user.
   
   For tutorials on how to use QCustomPlot, see the website\n
-  http://www.qcustomplot.com/
+                                              
 */
 
 /* start of documentation of inline functions */

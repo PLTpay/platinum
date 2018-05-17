@@ -8,10 +8,10 @@ What is the Platinum [PLATINUM] Blockchain?
 
 The Platinum [PLATINUM] Blockchain is an experimental smart contract platform protocol that enables 
 instant payments to anyone, anywhere in the world in a private, secure manner. 
-Platinum [PLATINUM] uses peer-to-peer blockchain technology developed by Bitcoin to operate
-with no central authority: managing transactions, execution of contracts, and 
-issuing money are carried out collectively by the network. Platinum [PLATINUM] is the name of 
-open source software which enables the use of this protocol.
+Platinum [PLATINUM] uses peer-to-peer blockchain technology to operate with no central authority:
+managing transactions, execution of contracts, and issuing money are carried out collectively
+by the network. Platinum [PLATINUM] is the name of open source software which enables the use
+of this protocol.
 
 Specifications and General info
 ------------------

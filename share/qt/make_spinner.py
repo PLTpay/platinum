@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-# W.J. van der Laan, 2011
+# Eugene Fillippovsky, 2017
 # Make spinning .mng animation from a .png
 # Requires imagemagick 6.7+
 from __future__ import division

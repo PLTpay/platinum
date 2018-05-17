@@ -1,4 +1,4 @@
-#include "bitcoinaddressvalidator.h"
+#include "platinumaddressvalidator.h"
 
 /* Base58 characters are:
      "123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz"

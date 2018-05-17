@@ -1,4 +1,4 @@
-/* Copyright (c) 2007 John W Wilkinson
+/* Copyright (c) 2014 John W Wilkinson
 
    This source code can be used for any purpose as long as
    this comment is retained. */

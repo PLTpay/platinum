@@ -1,5 +1,5 @@
 /**********************************************************************
- * Copyright (c) 2015 Pieter Wuille, Andrew Poelstra                  *
+ * Copyright (c) 2017 Eugene Fillippovsky                 *
  * Distributed under the MIT software license, see the accompanying   *
  * file COPYING or http://www.opensource.org/licenses/mit-license.php.*
  **********************************************************************/

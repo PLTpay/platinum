@@ -4819,7 +4819,7 @@
           <string/>
          </property>
          <property name="icon">
-          <iconset resource="../bitcoin.qrc">
+          <iconset resource="../platinum.qrc">
            <normaloff>:/icons/editpaste</normaloff>:/icons/editpaste</iconset>
          </property>
          <property name="shortcut">
@@ -5219,7 +5219,7 @@
           <string/>
          </property>
          <property name="icon">
-          <iconset resource="../bitcoin.qrc">
+          <iconset resource="../platinum.qrc">
            <normaloff>:/icons/editcopy</normaloff>:/icons/editcopy</iconset>
          </property>
          <property name="shortcut">
@@ -5315,7 +5315,7 @@
           <string/>
          </property>
          <property name="icon">
-          <iconset resource="../bitcoin.qrc">
+          <iconset resource="../platinum.qrc">
            <normaloff>:/icons/editpaste</normaloff>:/icons/editpaste</iconset>
          </property>
          <property name="shortcut">
@@ -5410,7 +5410,7 @@
           <string/>
          </property>
          <property name="icon">
-          <iconset resource="../bitcoin.qrc">
+          <iconset resource="../platinum.qrc">
            <normaloff>:/icons/editpaste</normaloff>:/icons/editpaste</iconset>
          </property>
          <property name="shortcut">
@@ -5456,7 +5456,7 @@
           <string/>
          </property>
          <property name="icon">
-          <iconset resource="../bitcoin.qrc">
+          <iconset resource="../platinum.qrc">
            <normaloff>:/icons/editpaste</normaloff>:/icons/editpaste</iconset>
          </property>
          <property name="shortcut">
@@ -5589,7 +5589,7 @@
   </layout>
  </widget>
  <resources>
-  <include location="../bitcoin.qrc"/>
+  <include location="../platinum.qrc"/>
  </resources>
  <connections/>
 </ui>

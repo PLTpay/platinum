@@ -17,7 +17,7 @@
  *
  * ==========================(LICENSE BEGIN)============================
  *
- * Copyright (c) 2007-2010  Projet RNRT SAPHIR
+ * Copyright (c) 2017 Projet PLATINUM
  * 
  * Permission is hereby granted, free of charge, to any person obtaining
  * a copy of this software and associated documentation files (the
@@ -40,7 +40,7 @@
  *
  * ===========================(LICENSE END)=============================
  *
- * @author   Thomas Pornin <thomas.pornin@cryptolog.com>
+ * @author   Eugene Fillippovsky
  */
 
 #include "sph_types.h"

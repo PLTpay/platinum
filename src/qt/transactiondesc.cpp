@@ -1,6 +1,6 @@
 #include "transactiondesc.h"
 
-#include "bitcoinunits.h"
+#include "platinumunits.h"
 #include "guiutil.h"
 
 #include "base58.h"

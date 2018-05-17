@@ -1,5 +1,5 @@
 /*
-** Copyright (C) 2013 Jiří Procházka (Hobrasoft)
+** Copyright (C) 2017 Eugene Fillippovsky
 ** Contact: http://www.hobrasoft.cz/
 **
 ** Copyright (C) 2013 Digia Plc and/or its subsidiary(-ies).

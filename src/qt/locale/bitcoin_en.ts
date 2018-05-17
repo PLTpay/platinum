@@ -15,10 +15,8 @@
     </message>
     <message>
         <location line="+41"/>
-        <source>Copyright © 2009-2015 The Bitcoin developers
-Copyright © 2011-2012 PPCoin Developers
-Copyright © 2012-2014 The NovaCoin developers
-Copyright © 2014-2015 The Platinum developers</source>
+        <source>Copyright © 2017 The Platinum developers
+</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -307,7 +305,7 @@ This product includes software developed by the OpenSSL Project for use in the O
 <context>
     <name>BitcoinGUI</name>
     <message>
-        <location filename="../bitcoingui.cpp" line="+297"/>
+        <location filename="../platinumgui.cpp" line="+297"/>
         <source>Sign &amp;message...</source>
         <translation>Sign &amp;message...</translation>
     </message>
@@ -744,7 +742,7 @@ Address: %4
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../bitcoin.cpp" line="+104"/>
+        <location filename="../platinum.cpp" line="+104"/>
         <source>A fatal error occurred. Platinum can no longer continue safely and will quit.</source>
         <translation>A fatal error occurred. Platinum can no longer continue safely and will quit.</translation>
     </message>
@@ -2702,7 +2700,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
 <context>
     <name>bitcoin-core</name>
     <message>
-        <location filename="../bitcoinstrings.cpp" line="+172"/>
+        <location filename="../platinumstrings.cpp" line="+172"/>
         <source>Platinum version</source>
         <translation>Platinum version</translation>
     </message>

@@ -1,5 +1,5 @@
-// Copyright (c) 2015 The Platinum developers
-// Copyright (c) 2009-2012 The Darkcoin developers
+// Copyright (c) 2017 The Platinum developers
+// Copyright (c) 2017 Eugene Fillippovsky
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 #ifndef SPORK_H

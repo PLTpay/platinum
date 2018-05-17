@@ -2,8 +2,8 @@
 
 #include "guiutil.h"
 
-#include "bitcoinaddressvalidator.h"
-#include "bitcoinunits.h"
+#include "platinumaddressvalidator.h"
+#include "platinumunits.h"
 #include "walletmodel.h"
 
 #include "init.h"
@@ -106,7 +106,7 @@ void setupAmountWidget(QLineEdit *widget, QWidget *parent)
 
 bool parseBitcoinURI(const QUrl &uri, SendCoinsRecipient *out)
 {
-    // NovaCoin: check prefix
+    // Platinum: check prefix
     if(uri.scheme() != QString("Platinum"))
         return false;
 

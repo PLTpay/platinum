@@ -1,5 +1,5 @@
-// Copyright (c) 2009-2010 Satoshi Nakamoto
-// Copyright (c) 2009-2012 The Bitcoin developers
+// Copyright (c) 2017 Eugene Fillippovsky
+// Copyright (c) 2017 The Platinum developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 #ifndef BITCOIN_MAIN_H
@@ -110,7 +110,7 @@ static const int64_t VELOCITY_TOGGLE = 120; // Implementation of the Velocity sy
 /** Velocity retarget toggle block */
 static const int64_t VELOCITY_TDIFF = 0; // Use Velocity's retargetting method.
 /** Protocol toggle */
-inline bool IsProtocolV3(int64_t nTime) { return TestNet() || nTime > 1525775400; } // Mon, 01 May 2017 00:00:00 GMT
+inline bool IsProtocolV3(int64_t nTime) { return TestNet() || nTime > 1526540400; } // Mon, 01 May 2017 00:00:00 GMT
 /** Reward Fix toggle */
 static const int64_t RWRD_FIX_TOGGLE = 827;
 /** MN Reward Fix toggle */
@@ -134,9 +134,9 @@ static const unsigned int nStakeMinAge = 2 / 60; // 30 minutes
 /** Time to elapse before new modifier is computed */
 static const unsigned int nModifierInterval = 2 * 60;
 /** Genesis Start Time */
-static const unsigned int timeGenesisBlock = 1525775400; // Mon, 01 May 2017 00:00:00 GMT
+static const unsigned int timeGenesisBlock = 1526540400; // Mon, 01 May 2017 00:00:00 GMT
 /** Genesis RegNet Start Time */
-static const unsigned int timeRegNetGenesis = 1525775400; // Mon, 01 May 2017 00:00:00 GMT
+static const unsigned int timeRegNetGenesis = 1526540400; // Mon, 01 May 2017 00:00:00 GMT
 /** Genesis Nonce */
 static const unsigned int nNonceMain = 0;
 /** Genesis Nonce Testnet */
@@ -156,13 +156,13 @@ static const int64_t nReservePhaseStart = 1;
 /** Reserve Phase end block */ 
 static const int64_t nReservePhaseEnd = 12; // 
 /** Main Net Genesis Block */
-static const uint256 nGenesisBlock("0x0000017acc6e5f2f560dfd05bf1e4d48eadc22d4b7c69f4e93403e91bfebfc8c");
+static const uint256 nGenesisBlock("0x00001d17add91350909236c5104b79c54270f32305a145dcb48da89182c8f7a1");
 /** Test Net Genesis Block */
-static const uint256 hashTestNetGenesisBlock("0x0000017acc6e5f2f560dfd05bf1e4d48eadc22d4b7c69f4e93403e91bfebfc8c");
+static const uint256 hashTestNetGenesisBlock("0x00001d17add91350909236c5104b79c54270f32305a145dcb48da89182c8f7a1");
 /** Reg Net Genesis Block */
-static const uint256 hashRegNetGenesisBlock("0x0000017acc6e5f2f560dfd05bf1e4d48eadc22d4b7c69f4e93403e91bfebfc8c");
+static const uint256 hashRegNetGenesisBlock("0x00001d17add91350909236c5104b79c54270f32305a145dcb48da89182c8f7a1");
 /** Genesis Merkleroot */
-static const uint256 nGenesisMerkle("0xadae7e39fb043653495b64330aa5d465514dd99096606fbb99d862771690bd54");
+static const uint256 nGenesisMerkle("0xbf55e1b068103f4097314a088c559b434487fff6091a19ff48e00931148d22cb");
 
 extern CScript COINBASE_FLAGS;
 extern CCriticalSection cs_main;
@@ -410,7 +410,7 @@ public:
 
     bool IsCoinStake() const
     {
-        // ppcoin: the coin stake transaction is marked with the first output empty
+        // platinum: the coin stake transaction is marked with the first output empty
         return (vin.size() > 0 && (!vin[0].prevout.IsNull()) && vout.size() >= 2 && vout[0].IsEmpty());
     }
 
@@ -748,7 +748,7 @@ public:
     // network and disk
     std::vector<CTransaction> vtx;
 
-    // ppcoin: block signature - signed by one of the coin base txout[N]'s owner
+    // platinum: block signature - signed by one of the coin base txout[N]'s owner
     std::vector<unsigned char> vchBlockSig;
 
     // memory only
@@ -834,7 +834,7 @@ public:
         return nEntropyBit;
     }
 
-    // ppcoin: two types of block: proof-of-work or proof-of-stake
+    // platinum: two types of block: proof-of-work or proof-of-stake
     bool IsProofOfStake() const
     {
         return (vtx.size() > 1 && vtx[1].IsCoinStake());
@@ -850,7 +850,7 @@ public:
         return IsProofOfStake()? std::make_pair(vtx[1].vin[0].prevout, vtx[1].nTime) : std::make_pair(COutPoint(), (unsigned int)0);
     }
 
-    // ppcoin: get max transaction timestamp
+    // platinum: get max transaction timestamp
     int64_t GetMaxTransactionTime() const
     {
         int64_t maxTransactionTime = 0;
@@ -1063,13 +1063,13 @@ public:
     CBlockIndex* pnext;
     unsigned int nFile;
     unsigned int nBlockPos;
-    uint256 nChainTrust; // ppcoin: trust score of block chain
+    uint256 nChainTrust; // platinum: trust score of block chain
     int nHeight;
 
     int64_t nMint;
     int64_t nMoneySupply;
 
-    unsigned int nFlags;  // ppcoin: block index flags
+    unsigned int nFlags;  // platinum: block index flags
     enum
     {
         BLOCK_PROOF_OF_STAKE = (1 << 0), // is proof-of-stake block

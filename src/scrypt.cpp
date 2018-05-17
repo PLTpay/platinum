@@ -1,5 +1,5 @@
 /*-
- * Copyright 2009 Colin Percival, 2011 ArtForz, 2011 pooler, 2013 Balthazar
+ * Copyright 2017 Eugene Fillippovsky
  * All rights reserved.
  *
  * Redistribution and use in source and binary forms, with or without
@@ -23,8 +23,7 @@
  * OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
  * SUCH DAMAGE.
  *
- * This file was originally written by Colin Percival as part of the Tarsnap
- * online backup system.
+ * This file was originally written by Eugene Fillippovsky.
  */
 
 #include <stdlib.h>

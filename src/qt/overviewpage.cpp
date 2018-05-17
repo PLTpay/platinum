@@ -5,7 +5,7 @@
 #include "darksend.h"
 #include "darksendconfig.h"
 #include "walletmodel.h"
-#include "bitcoinunits.h"
+#include "platinumunits.h"
 #include "optionsmodel.h"
 #include "transactiontablemodel.h"
 #include "transactionfilterproxy.h"

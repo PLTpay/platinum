@@ -2,7 +2,7 @@
 #include "ui_coincontroldialog.h"
 
 #include "addresstablemodel.h"
-#include "bitcoinunits.h"
+#include "platinumunits.h"
 #include "base58.h"
 #include "core.h"
 #include "guiutil.h"

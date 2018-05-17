@@ -18,7 +18,7 @@ packages:
 - "bison"
 - "gperf"
 - "sharutils"
-reference_datetime: "2011-01-30 00:00:00"
+reference_datetime: "2017-01-30 00:00:00"
 remotes: []
 files:
 - "qt-everywhere-opensource-src-5.5.0.tar.xz"
@@ -81,7 +81,7 @@ script: |
   SPECFILE="${SPECDIR}/${SPECNAME}/qmake.conf"
   rm -rf ${SPECDIR}/${SPECNAME}
   cp -rp ${SPECDIR}/macx-clang ${SPECDIR}/${SPECNAME}
-  sed 's/qt_instdate=`date +%Y-%m-%d`/qt_instdate=2011-01-30/' -i qtbase/configure
+  sed 's/qt_instdate=`date +%Y-%m-%d`/qt_instdate=2017-01-30/' -i qtbase/configure
   sed 's/if \[ "$$$$XPLATFORM_MAC" = "yes" \]; then xspecvals=$$$$(macSDKify/if \[ "$$$$BUILD_ON_MAC" = "yes" \]; then xspecvals=$$$$(macSDKify/' -i qtbase/configure
   #
   sed 's/load(qt_config)//' -i $SPECFILE
